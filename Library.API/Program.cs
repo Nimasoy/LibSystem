@@ -1,4 +1,6 @@
-
+using Library.Infrastructure;
+using Library.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 namespace Library.API
 {
     public class Program
@@ -6,6 +8,11 @@ namespace Library.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDbContext<LibraryDbContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddInfrastructure(builder.Configuration);
 
             // Add services to the container.
 

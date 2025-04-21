@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +26,60 @@
       "DocumentGroups": [
         {
           "DockedHeight": 199,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Tag.cs",
+              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Tag.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Tag.cs",
+              "RelativeToolTip": "Library.Domain\\Entities\\Tag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T10:59:34.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Library.Domain\\Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T10:51:35.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
+              "RelativeToolTip": "Library.Domain\\Entities\\Book.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T10:43:03.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
+              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Reservation.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
+              "RelativeToolTip": "Library.Domain\\Entities\\Reservation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T10:41:12.778Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"

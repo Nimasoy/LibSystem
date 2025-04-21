@@ -16,7 +16,11 @@ namespace Library.Domain.Entities
         public int Year { get; set; }
         public int TotalCopies { get; set; }
         public int AvailableCopies { get; set; }
+        public Category Category { get; set; }
 
+        public ICollection<Tag>? Tags { get; set; }
         public ICollection<Reservation>? Reservations { get; set; }
+        public ICollection<BorrowRecord>? BorrowRecords { get; set; }
+
     }
 }
