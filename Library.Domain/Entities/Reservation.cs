@@ -12,5 +12,6 @@ namespace Library.Domain.Entities
         public int BookId { get; set; }
         public int UserId { get; set; }
         public DateTime ReservedAt { get; set; }
+        public Book Book { get; set; }
     }
 }

@@ -15,6 +15,7 @@ namespace Library.Domain.Entities
         public DateTime BorrowedAt { get; set; }
         public DateTime DueAt { get; set; }
         public DateTime? ReturnedAt { get; set; }
+        public Book Book { get; set; }
 
         public bool IsOverdue => ReturnedAt == null && DueAt < DateTime.Now;
     }

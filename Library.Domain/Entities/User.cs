@@ -12,7 +12,7 @@ namespace Library.Domain.Entities
         public string FullName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
 
-        public ICollection<BorrowRecord>? BorrowedBooks { get; set; }
+        public ICollection<BorrowRecord>? Borrows{ get; set; }
         public ICollection<Reservation>? Reservations { get; set; }
     }
 }

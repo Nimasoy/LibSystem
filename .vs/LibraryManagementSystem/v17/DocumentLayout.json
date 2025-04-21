@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|solutionrelative:library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|solutionrelative:library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +38,41 @@
       "DocumentGroups": [
         {
           "DockedHeight": 199,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "BorrowRecord.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\BorrowRecord.cs",
+              "RelativeDocumentMoniker": "Library.Domain\\Entities\\BorrowRecord.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\BorrowRecord.cs",
+              "RelativeToolTip": "Library.Domain\\Entities\\BorrowRecord.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T12:03:23.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Library.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Library.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T12:01:09.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Program.cs",
               "RelativeDocumentMoniker": "Library.API\\Program.cs",
@@ -46,12 +84,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Tag.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Tag.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Tag.cs",
@@ -72,31 +106,34 @@
               "RelativeToolTip": "Library.Domain\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:51:35.805Z"
+              "WhenOpened": "2025-04-21T10:51:35.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Book.cs",
               "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
               "RelativeToolTip": "Library.Domain\\Entities\\Book.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAwAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:43:03.821Z"
+              "WhenOpened": "2025-04-21T10:43:03.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Reservation.cs",
               "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
               "RelativeToolTip": "Library.Domain\\Entities\\Reservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:41:12.778Z"
+              "WhenOpened": "2025-04-21T10:41:12.778Z",
+              "EditorCaption": ""
             }
           ]
         },

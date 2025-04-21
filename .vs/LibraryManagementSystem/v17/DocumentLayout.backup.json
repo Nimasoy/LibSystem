@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|solutionrelative:library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +35,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Program.cs",
+              "RelativeDocumentMoniker": "Library.API\\Program.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Program.cs",
+              "RelativeToolTip": "Library.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T11:32:48.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Tag.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Tag.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Tag.cs",
@@ -43,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Category.cs",
@@ -51,12 +72,11 @@
               "RelativeToolTip": "Library.Domain\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:51:35.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T10:51:35.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Book.cs",
@@ -64,12 +84,11 @@
               "RelativeToolTip": "Library.Domain\\Entities\\Book.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwAwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:43:03.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T10:43:03.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
               "RelativeDocumentMoniker": "Library.Domain\\Entities\\Reservation.cs",
@@ -77,12 +96,7 @@
               "RelativeToolTip": "Library.Domain\\Entities\\Reservation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:41:12.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "WhenOpened": "2025-04-21T10:41:12.778Z"
             }
           ]
         },
