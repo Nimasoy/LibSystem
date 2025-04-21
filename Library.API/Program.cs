@@ -9,9 +9,6 @@ namespace Library.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddDbContext<LibraryDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
             builder.Services.AddInfrastructure(builder.Configuration);
 
             // Add services to the container.
