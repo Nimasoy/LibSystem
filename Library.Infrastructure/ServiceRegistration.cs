@@ -7,6 +7,8 @@ using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Library.Application.Interfaces.Repositories;
+using Library.Infrastructure.Repositories;
 
 namespace Library.Infrastructure
 {
@@ -16,6 +18,13 @@ namespace Library.Infrastructure
         {
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ITagRepository, TagRepository>();
+            services.AddScoped<IBorrowRecordRepository, BorrowRecordRepository>();
+            services.AddScoped<IReservationRepository, ReservationRepository>();
 
             return services;
         }
