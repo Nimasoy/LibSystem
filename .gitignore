@@ -1,0 +1,38 @@
+## Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+## Ignore build outputs
+bin/
+obj/
+out/
+
+## Ignore .NET artifacts
+*.dll
+*.exe
+*.app
+*.log
+*.pdb
+
+## Ignore database files
+*.mdf
+*.ldf
+
+## Ignore EF Core Migrations artifacts
+Migrations/
+
+## Ignore sensitive files
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## Ignore Rider files (if any)
+.idea/
+
+## Ignore OS junk
+Thumbs.db
+ehthumbs.db
+.DS_Store
+*.swp
+
