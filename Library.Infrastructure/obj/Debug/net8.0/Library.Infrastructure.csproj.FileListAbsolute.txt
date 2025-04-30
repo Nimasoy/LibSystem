@@ -17,3 +17,4 @@ C:\Users\nmv\Desktop\LibraryManagementSystem\Library.Infrastructure\obj\Debug\ne
 C:\Users\nmv\Desktop\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net8.0\Library.Infrastructure.pdb
 C:\Users\nmv\Desktop\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net8.0\Library.Infrastructure.genruntimeconfig.cache
 C:\Users\nmv\Desktop\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net8.0\ref\Library.Infrastructure.dll
+C:\Users\nmv\Desktop\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net8.0\Library.Infrastructure.sourcelink.json

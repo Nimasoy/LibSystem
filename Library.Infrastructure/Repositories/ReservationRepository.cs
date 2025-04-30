@@ -13,37 +13,39 @@ namespace Library.Infrastructure.Repositories
     public class ReservationRepository : IReservationRepository
     {
         private readonly LibraryDbContext _context;
+        private readonly DbSet<Reservation> _reservation;
 
         public ReservationRepository(LibraryDbContext context)
         {
             _context = context;
+            _reservation = _context.Set<Reservation>();
         }
 
         public async Task<Reservation?> GetByIdAsync(int id)
         {
-            return await _context.Set<Reservation>().FindAsync(id);
+            return await _reservation.FindAsync(id);
         }
 
         public async Task<List<Reservation>> GetAllAsync()
         {
-            return await _context.Set<Reservation>().ToListAsync();
+            return await _reservation.ToListAsync();
         }
 
         public async Task AddAsync(Reservation entity)
         {
-            _context.Set<Reservation>().Add(entity);
+            _reservation.Add(entity);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(Reservation entity)
         {
-            _context.Set<Reservation>().Update(entity);
+            _reservation.Update(entity);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(Reservation entity)
         {
-            _context.Set<Reservation>().Remove(entity);
+            _reservation.Remove(entity);
             await _context.SaveChangesAsync();
         }
     }

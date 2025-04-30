@@ -1,6 +1,7 @@
 using Library.Infrastructure;
 using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Library.Application;
 namespace Library.API
 {
     public class Program
@@ -10,6 +11,8 @@ namespace Library.API
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddInfrastructure(builder.Configuration);
+
+            builder.Services.AddApplication();
 
             // Add services to the container.
 

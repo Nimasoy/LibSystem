@@ -13,37 +13,38 @@ namespace Library.Infrastructure.Repositories
     public class CategoryRepository : ICategoryRepository
     {
         private readonly LibraryDbContext _context;
-
+        private readonly DbSet<Category> _category;
         public CategoryRepository(LibraryDbContext context)
         {
             _context = context;
+            _category = _context.Set<Category>();
         }
 
         public async Task<Category?> GetByIdAsync(int id)
         {
-            return await _context.Set<Category>().FindAsync(id);
+            return await _category.FindAsync(id);
         }
 
         public async Task<List<Category>> GetAllAsync()
         {
-            return await _context.Set<Category>().ToListAsync();
+            return await _category.ToListAsync();
         }
 
         public async Task AddAsync(Category entity)
         {
-            _context.Set<Category>().Add(entity);
+            _category.Add(entity);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(Category entity)
         {
-            _context.Set<Category>().Update(entity);
+            _category.Update(entity);
             await _context.SaveChangesAsync();
         }
 
         public async Task DeleteAsync(Category entity)
         {
-            _context.Set<Category>().Remove(entity);
+            _category.Remove(entity);
             await _context.SaveChangesAsync();
         }
     }

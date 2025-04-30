@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.application\\features\\books\\commands\\addbookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|solutionrelative:library.application\\features\\books\\commands\\addbookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.application\\features\\books\\commands\\deletebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|solutionrelative:library.application\\features\\books\\commands\\deletebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.application\\features\\books\\commands\\updatebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|solutionrelative:library.application\\features\\books\\commands\\updatebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA39FBB-878A-4B59-9A8D-75158EEB2381}|Library.Domain\\Library.Domain.csproj|solutionrelative:library.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{046D71C4-7D10-459C-85BF-FDC7E99DF5BF}|Library.API\\Library.API.csproj|solutionrelative:library.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|c:\\users\\nmv\\desktop\\librarymanagementsystem\\library.application\\features\\books\\queries\\getbookbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{873D172F-74B8-4C91-B2CE-A5975FD64F70}|Library.Application\\Library.Application.csproj|solutionrelative:library.application\\features\\books\\queries\\getbookbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,32 +30,32 @@
       "DocumentGroups": [
         {
           "DockedHeight": 199,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BorrowRecord.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\BorrowRecord.cs",
-              "RelativeDocumentMoniker": "Library.Domain\\Entities\\BorrowRecord.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\BorrowRecord.cs",
-              "RelativeToolTip": "Library.Domain\\Entities\\BorrowRecord.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "DeleteBookCommand.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Commands\\DeleteBookCommand.cs",
+              "RelativeDocumentMoniker": "Library.Application\\Features\\Books\\Commands\\DeleteBookCommand.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Commands\\DeleteBookCommand.cs",
+              "RelativeToolTip": "Library.Application\\Features\\Books\\Commands\\DeleteBookCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:03:23.495Z",
+              "WhenOpened": "2025-04-26T13:25:17.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Library.Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\User.cs",
-              "RelativeToolTip": "Library.Domain\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AddBookCommand.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Commands\\AddBookCommand.cs",
+              "RelativeDocumentMoniker": "Library.Application\\Features\\Books\\Commands\\AddBookCommand.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Commands\\AddBookCommand.cs",
+              "RelativeToolTip": "Library.Application\\Features\\Books\\Commands\\AddBookCommand.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T12:01:09.762Z",
+              "WhenOpened": "2025-04-26T13:09:37.404Z",
               "EditorCaption": ""
             },
             {
@@ -72,67 +64,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Program.cs",
-              "RelativeDocumentMoniker": "Library.API\\Program.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Program.cs",
-              "RelativeToolTip": "Library.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UpdateBookCommand.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Commands\\UpdateBookCommand.cs",
+              "RelativeDocumentMoniker": "Library.Application\\Features\\Books\\Commands\\UpdateBookCommand.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Commands\\UpdateBookCommand.cs",
+              "RelativeToolTip": "Library.Application\\Features\\Books\\Commands\\UpdateBookCommand.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T11:32:48.111Z",
+              "WhenOpened": "2025-04-26T12:01:34.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Tag.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Tag.cs",
-              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Tag.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Tag.cs",
-              "RelativeToolTip": "Library.Domain\\Entities\\Tag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Title": "GetBookByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Queries\\GetBookByIdQuery.cs",
+              "RelativeDocumentMoniker": "Library.Application\\Features\\Books\\Queries\\GetBookByIdQuery.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Application\\Features\\Books\\Queries\\GetBookByIdQuery.cs",
+              "RelativeToolTip": "Library.Application\\Features\\Books\\Queries\\GetBookByIdQuery.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:59:34.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T11:45:23.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Category.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Category.cs",
-              "RelativeToolTip": "Library.Domain\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Library.API\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.API\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Library.API\\Controllers\\BookController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCMAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:51:35.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
-              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Book.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Book.cs",
-              "RelativeToolTip": "Library.Domain\\Entities\\Book.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:43:03.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
-              "RelativeDocumentMoniker": "Library.Domain\\Entities\\Reservation.cs",
-              "ToolTip": "C:\\Users\\nmv\\Desktop\\LibraryManagementSystem\\Library.Domain\\Entities\\Reservation.cs",
-              "RelativeToolTip": "Library.Domain\\Entities\\Reservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T10:41:12.778Z",
+              "WhenOpened": "2025-04-26T11:36:07.557Z",
               "EditorCaption": ""
             }
           ]

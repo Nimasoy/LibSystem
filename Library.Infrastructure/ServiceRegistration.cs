@@ -9,6 +9,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Library.Application.Interfaces.Repositories;
 using Library.Infrastructure.Repositories;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using Library.Application.Mapping;
+using MediatR;
 
 namespace Library.Infrastructure
 {
