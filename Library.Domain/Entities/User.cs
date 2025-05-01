@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Domain.ValueObjects.User;
 
 namespace Library.Domain.Entities
 {
-    public class User
+    public class User(FullName fullname, Email email)
     {
-        public int Id { get; set; }
-        public string FullName { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
+        public int Id { get; private set; }
+        public FullName FullName { get; private set; } = fullname ?? throw new ArgumentNullException(nameof(fullname));
+        public Email Email { get; private set; } = email ?? throw new ArgumentNullException(nameof(email));
 
-        public ICollection<BorrowRecord>? Borrows{ get; set; }
-        public ICollection<Reservation>? Reservations { get; set; }
+        public ICollection<BorrowRecord> Borrows { get; private set; } = [];
+        public ICollection<Reservation> Reservations { get; private set; } = [];
     }
 }
