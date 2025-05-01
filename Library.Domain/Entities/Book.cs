@@ -1,26 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Domain.ValueObjects.Book;
 
 namespace Library.Domain.Entities
 {
-    public class Book
+#nullable enable
+    public class Book(Title title, Author author, ISBN iSBN, Publisher publisher, Year year,
+        TotalCopies totalCopies, AvailableCopies availableCopies, Category category) // new c#12 feature :)
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
-        public string ISBN { get; set; }
-        public string Publisher { get; set; }
-        public int Year { get; set; }
-        public int TotalCopies { get; set; }
-        public int AvailableCopies { get; set; }
-        public Category Category { get; set; }
-        public int CategoryId { get; set; }
-        public ICollection<Tag>? Tags { get; set; }
-        public ICollection<Reservation>? Reservations { get; set; }
-        public ICollection<BorrowRecord>? Borrows { get; set; }
+        public int Id { get; private set; }
+        public Title Title { get; private set; } = title ?? throw new ArgumentNullException(nameof(title));
+        public Author Author { get; private set; } = author ?? throw new ArgumentNullException(nameof(author));
+        public ISBN ISBN { get; private set; } = iSBN ?? throw new ArgumentNullException(nameof(iSBN));
+        public Publisher Publisher { get; private set; } = publisher ?? throw new ArgumentNullException(nameof(publisher));
+        public Year Year { get; private set; } = year ?? throw new ArgumentNullException(nameof(year));
+        public TotalCopies TotalCopies { get; private set; } = totalCopies ?? throw new ArgumentNullException(nameof(totalCopies));
+        public AvailableCopies AvailableCopies { get; private set; } = availableCopies ?? throw new ArgumentNullException(nameof(availableCopies));
+        public Category Category { get; private set; } = category ?? throw new ArgumentNullException(nameof(category));
+        public int CategoryId { get; private set; }
 
+        public ICollection<Tag> Tags { get; private set; } = [];
+        public ICollection<Reservation> Reservations { get; private set; } = [];
+        public ICollection<BorrowRecord> Borrows { get; private set; } = [];
     }
 }
