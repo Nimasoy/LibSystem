@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Library.Domain.ValueObjects.Tag;
 namespace Library.Domain.Entities
 {
-    public class Tag
+    public class Tag(TagName name)
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public int Id { get; private set; }
+        public TagName Name { get; private set; } = name ?? throw new ArgumentNullException(nameof(name));
 
-        public ICollection<Book>? Books { get; set; }
+        public ICollection<Book> Books { get; private set; } = [];
     }
 }
