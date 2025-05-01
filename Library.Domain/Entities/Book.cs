@@ -20,5 +20,28 @@ namespace Library.Domain.Entities
         public ICollection<Tag> Tags { get; private set; } = [];
         public ICollection<Reservation> Reservations { get; private set; } = [];
         public ICollection<BorrowRecord> Borrows { get; private set; } = [];
+
+        public void Borrow()
+        {
+            if (AvailableCopies.Value <= 0)
+                throw new InvalidOperationException("No copies available.");
+
+            AvailableCopies = new AvailableCopies(AvailableCopies.Value - 1);
+        }
+        public void ReturnBook()
+        {
+            if (AvailableCopies.Value >= TotalCopies.Value) throw new InvalidOperationException("All copies are already returned.");
+            AvailableCopies = new AvailableCopies(AvailableCopies.Value + 1);
+        }
+        public bool IsAvailable() => AvailableCopies.Value > 0;
+        public bool IsReservedByOtherUser(int userId)
+        {
+            return Reservations.Any(r => r.UserId != userId);
+        } 
+        public void AddTag(Tag tag)
+        {
+            if (Tags.Any(t => t.Id == tag.Id)) throw new InvalidOperationException("Tag already exists.");
+            Tags.Add(tag);
+        }
     }
 }

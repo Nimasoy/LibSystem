@@ -1,11 +1,11 @@
 ﻿namespace Library.Domain.Entities
 {
-    public class Reservation(Book book)
+    public class Reservation(Book book, int userId)
     {
-        public int Id { get; private set; }
-        public int BookId { get; private set; }
-        public int UserId { get; private set; }
-        public DateTime ReservedAt { get; private set; }
-        public Book Book { get; private set; } = book ?? throw new ArgumentNullException(nameof(book));
+        public int Id { get; private set; } 
+        public int BookId { get; private set; } = book.Id;
+        public int UserId { get; private set; } = userId;
+        public DateTime ReservedAt { get; private set; } = DateTime.UtcNow;
+        public Book Book { get; private set; } = book;
     }
 }

@@ -10,5 +10,11 @@ namespace Library.Domain.Entities
 
         public ICollection<BorrowRecord> Borrows { get; private set; } = [];
         public ICollection<Reservation> Reservations { get; private set; } = [];
+
+        public void AddBorrowRecord(Book book)
+        {
+            var borrowRecord = new BorrowRecord(book, this.Id);
+            Borrows.Add(borrowRecord);
+        }
     }
 }
