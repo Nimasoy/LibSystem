@@ -2,7 +2,7 @@
 {
     public class FullName
     {
-        public string Value { get; set; }
+        public string Value { get;}
         public FullName(string value)
         {
             if (string.IsNullOrWhiteSpace(value)) throw new ArgumentException("Name cannot be empty.");
