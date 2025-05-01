@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Domain.ValueObjects.Category;
 
 namespace Library.Domain.Entities
 {
-    public class Category
+    public class Category(CategoryName name)
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<Book>? Books { get; set; }
+        public int Id { get; private set; }
+        public CategoryName Name { get; private set; } = name ?? throw new ArgumentNullException(nameof(name));
+        public ICollection<Book> Books { get; private set; } = [];
     }
 }
