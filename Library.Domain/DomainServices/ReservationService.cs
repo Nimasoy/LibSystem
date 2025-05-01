@@ -6,6 +6,12 @@ public record BookReservedEvent(int UserId, int BookId, DateTime ReservedAt);
 
 public class ReservationService
 {
+    private readonly IDomainEventDispatcher _eventDispatcher;
+
+    public ReservationService(IDomainEventDispatcher eventDispatcher)
+    {
+        _eventDispatcher = eventDispatcher;
+    }
     public void ReserveBook(User user, Book book)
     {
         if (user.Borrows.Any(b => b.BookId == book.Id))
