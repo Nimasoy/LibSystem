@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Library.Domain.Entities
+﻿namespace Library.Domain.Entities
 {
-    public class BorrowRecord
+    public class BorrowRecord(Book book)
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public int BookId { get; set; }
+        public int Id { get; private set; }
+        public int UserId { get; private set; }
+        public int BookId { get; private set; }
 
-        public DateTime BorrowedAt { get; set; }
-        public DateTime DueAt { get; set; }
-        public DateTime? ReturnedAt { get; set; }
-        public Book Book { get; set; }
+        public DateTime BorrowedAt { get; private set; }
+        public DateTime DueAt { get; private set; }
+        public DateTime? ReturnedAt { get; private set; }
+        public Book Book { get; private set; } = book ?? throw new ArgumentNullException(nameof(book));
 
         public bool IsOverdue => ReturnedAt == null && DueAt < DateTime.Now;
     }
