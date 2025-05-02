@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Library.Application.Interfaces.Repositories;
+﻿using Library.Domain.Interfaces;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -32,22 +26,33 @@ namespace Library.Infrastructure.Repositories
             return await _tag.ToListAsync();
         }
 
-        public async Task AddAsync(Tag entity)
+        public async Task AddAsync(Tag tag)
         {
-            _tag.Add(entity);
+            _tag.Add(tag);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(Tag entity)
+        public async Task UpdateAsync(Tag tag)
         {
-            _tag.Update(entity);
+            _tag.Update(tag);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(Tag entity)
+        public async Task DeleteAsync(Tag tag)
         {
-            _tag.Remove(entity);
+            _tag.Remove(tag);
             await _context.SaveChangesAsync();
         }
+
+        // domain specific queries
+        public async Task<Tag?> GetByNameAsync(string name)
+        {
+            return await _context.Tags.FirstOrDefaultAsync(t => t.Name.Value == name);
+        }
+        public async Task<bool> ExistsAsync(string name)
+        {
+            return await _context.Tags.AnyAsync(t => t.Name.Value == name);
+        }
+
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Library.Application.Interfaces.Repositories;
+﻿using Library.Domain.Interfaces;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -19,33 +14,40 @@ namespace Library.Infrastructure.Repositories
             _context = context;
             _category = _context.Set<Category>();
         }
-
         public async Task<Category?> GetByIdAsync(int id)
         {
             return await _category.FindAsync(id);
         }
-
         public async Task<List<Category>> GetAllAsync()
         {
             return await _category.ToListAsync();
         }
-
-        public async Task AddAsync(Category entity)
+        public async Task AddAsync(Category category)
         {
-            _category.Add(entity);
+            _category.Add(category);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateAsync(Category category)
+        {
+            _category.Update(category);
+            await _context.SaveChangesAsync();
+        }
+        public async Task DeleteAsync(Category category)
+        {
+            _category.Remove(category);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(Category entity)
+        // domain specific queries
+        public async Task<bool> ExistsAsync(int categoryId)
         {
-            _category.Update(entity);
-            await _context.SaveChangesAsync();
+            return await _context.Categories.AnyAsync(c => c.Id == categoryId);
+        }
+        public async Task<Category?> GetByNameAsync(string name)
+        {
+            return await _context.Categories.FirstOrDefaultAsync(c => c.Name.Value == name);
         }
 
-        public async Task DeleteAsync(Category entity)
-        {
-            _category.Remove(entity);
-            await _context.SaveChangesAsync();
-        }
+
     }
 }

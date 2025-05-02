@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Library.Application.Interfaces.Repositories;
+﻿using Library.Domain.Interfaces;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -32,22 +27,36 @@ namespace Library.Infrastructure.Repositories
             return await _records.ToListAsync();
         }
 
-        public async Task AddAsync(BorrowRecord entity)
+        public async Task AddAsync(BorrowRecord borrow)
         {
-            _records.Add(entity);
+            _records.Add(borrow);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(BorrowRecord entity)
+        public async Task UpdateAsync(BorrowRecord borrow)
         {
-            _records.Update(entity);
+            _records.Update(borrow);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(BorrowRecord entity)
+        public async Task DeleteAsync(BorrowRecord borrow)
         {
-            _records.Remove(entity);
+            _records.Remove(borrow);
             await _context.SaveChangesAsync();
         }
+
+        // domain specific queries
+        public async Task<List<BorrowRecord>> GetOverdueByUserId(int userId)
+        {
+            return await _context.BorrowRecords
+                .Where(b => b.UserId == userId && b.ReturnedAt == null && b.DueAt < DateTime.UtcNow)
+                .ToListAsync();
+        }
+        public async Task<bool> IsOverdue(int borrowRecordId)
+        {
+            var record = await _context.BorrowRecords.FindAsync(borrowRecordId);
+            return record != null && record.ReturnedAt == null && record.DueAt < DateTime.UtcNow;
+        }
+
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Library.Application.Interfaces.Repositories;
+﻿using Library.Domain.Interfaces;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -30,23 +25,32 @@ namespace Library.Infrastructure.Repositories
         {
             return await _reservation.ToListAsync();
         }
-
-        public async Task AddAsync(Reservation entity)
+        public async Task AddAsync(Reservation reservation)
         {
-            _reservation.Add(entity);
+            _reservation.Add(reservation);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateAsync(Reservation reservation)
+        {
+            _reservation.Update(reservation);
+            await _context.SaveChangesAsync();
+        }
+        public async Task DeleteAsync(Reservation reservation)
+        {
+            _reservation.Remove(reservation);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(Reservation entity)
+        // domain specific queries
+        public async Task<bool> IsReserved(int bookId)
         {
-            _reservation.Update(entity);
-            await _context.SaveChangesAsync();
+            return await _context.Reservations.AnyAsync(r => r.BookId == bookId);
+        }
+        public async Task<Reservation?> GetUserReservation(int userId, int bookId)
+        {
+            return await _context.Reservations
+                .FirstOrDefaultAsync(r => r.UserId == userId && r.BookId == bookId);
         }
 
-        public async Task DeleteAsync(Reservation entity)
-        {
-            _reservation.Remove(entity);
-            await _context.SaveChangesAsync();
-        }
     }
 }

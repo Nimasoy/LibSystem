@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Library.Application.Interfaces.Repositories;
+﻿using Library.Domain.Interfaces;
 using Library.Domain.Entities;
 using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -32,22 +27,40 @@ namespace Library.Infrastructure.Repositories
             return await _user.ToListAsync();
         }
 
-        public async Task AddAsync(User entity)
+        public async Task AddAsync(User user)
         {
-            _user.Add(entity);
+            _user.Add(user);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(User entity)
+        public async Task UpdateAsync(User user)
         {
-            _user.Update(entity);
+            _user.Update(user);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(User entity)
+        public async Task DeleteAsync(User user)
         {
-            _user.Remove(entity);
+            _user.Remove(user);
             await _context.SaveChangesAsync();
         }
+
+        // domain specific queries
+        public async Task<bool> HasOverdueBooks(int userId)
+        {
+            return await _context.BorrowRecords
+                .AnyAsync(b => b.UserId == userId && b.ReturnedAt == null && b.DueAt < DateTime.UtcNow);
+        }
+        public async Task<bool> HasBorrowedBook(int userId, int bookId)
+        {
+            return await _context.BorrowRecords
+                .AnyAsync(b => b.UserId == userId && b.BookId == bookId);
+        }
+        public async Task<bool> HasReservedBook(int userId, int bookId)
+        {
+            return await _context.Reservations
+                .AnyAsync(r => r.UserId == userId && r.BookId == bookId);
+        }
+
     }
 }
