@@ -14,7 +14,8 @@ namespace Library.Application.Mapping
         public BookProfile()
         {
             CreateMap<Book, BookDto>()
-                .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Category.Name));
+                // Map CategoryName from the first category in the Categories collection
+                .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.Categories.FirstOrDefault() != null ? src.Categories.FirstOrDefault().Name.Value : null));
 
             CreateMap<CreateBookDto, Book>()
                 .ForMember(dest => dest.AvailableCopies, opt => opt.MapFrom(src => src.TotalCopies));

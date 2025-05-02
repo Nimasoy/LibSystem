@@ -1,20 +1,37 @@
-﻿using Library.Domain.ValueObjects.User;
+﻿using Library.Domain.Common;
 
-namespace Library.Domain.Entities
+namespace Library.Domain.Entities;
+
+public class User
 {
-    public class User(FullName fullname, Email email)
+    public int Id { get; private set; }
+    public string Email { get; private set; } = string.Empty;
+    public string PasswordHash { get; private set; } = string.Empty;
+    public string FirstName { get; private set; } = string.Empty;
+    public string LastName { get; private set; } = string.Empty;
+    public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
+
+    public ICollection<BorrowRecord> BorrowRecords { get; private set; } = [];
+    public ICollection<Reservation> Reservations { get; private set; } = [];
+
+    private User() { } // For EF Core
+
+    public User(string email, string passwordHash, string firstName, string lastName)
     {
-        public int Id { get; private set; }
-        public FullName FullName { get; private set; } = fullname ?? throw new ArgumentNullException(nameof(fullname));
-        public Email Email { get; private set; } = email ?? throw new ArgumentNullException(nameof(email));
+        Email = email ?? throw new ArgumentNullException(nameof(email));
+        PasswordHash = passwordHash ?? throw new ArgumentNullException(nameof(passwordHash));
+        FirstName = firstName ?? throw new ArgumentNullException(nameof(firstName));
+        LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));
+    }
 
-        public ICollection<BorrowRecord> Borrows { get; private set; } = [];
-        public ICollection<Reservation> Reservations { get; private set; } = [];
+    public void UpdateProfile(string firstName, string lastName)
+    {
+        FirstName = firstName ?? throw new ArgumentNullException(nameof(firstName));
+        LastName = lastName ?? throw new ArgumentNullException(nameof(lastName));
+    }
 
-        public void AddBorrowRecord(Book book)
-        {
-            var borrowRecord = new BorrowRecord(book, this.Id);
-            Borrows.Add(borrowRecord);
-        }
+    public void ChangePassword(string newPasswordHash)
+    {
+        PasswordHash = newPasswordHash ?? throw new ArgumentNullException(nameof(newPasswordHash));
     }
 }

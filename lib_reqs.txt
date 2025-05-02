@@ -1,0 +1,55 @@
+Design Considerations:
+
+Use Repository Pattern
+Implement Dependency Injection
+Apply SOLID principles
+Use Data Transfer Objects (DTOs)
+Implement validation
+Add error handling
+Use async/await for performance
+Implement logging
+Add authentication/authorization
+Technology Stack Recommendations:
+
+ASP.NET Core Web API
+Entity Framework Core
+AutoMapper
+FluentValidation
+Swagger/OpenAPI
+JWT Authentication
+Logging (Serilog)
+Unit Testing (xUnit)
+Each scenario provides:
+
+Clear business context
+Specific requirements
+Suggested endpoint structure
+Potential implementation approach
+Clean Architecture principles
+CQRS Pattern with MediatR
+Entity Framework Core
+Validation with FluentValidation
+AutoMapper for DTO mapping
+Distributed Caching
+Global Exception Handling
+JWT Authentication
+Dependency Injection
+Async/Await pattern
+Repository Pattern
+Minimal API design
+OpenAPI/Swagger attributes
+Error handling middleware
+
+Business Requirements:  
+- Manage book inventory  
+- Track book lending  
+- Handle book reservations  
+- Implement user borrowing limits  
+- Generate borrowing reports  
+
+Key Features:  
+- Book catalog management  
+- Lending tracking  
+- Reservation system  
+- User borrowing history  
+- Overdue management  

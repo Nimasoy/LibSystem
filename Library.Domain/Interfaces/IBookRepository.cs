@@ -13,8 +13,10 @@ namespace Library.Domain.Interfaces
         Task<IEnumerable<Book>> GetAvailableBooks();
         Task<bool> IsReservedByUser(int bookId, int userId);
         Task<bool> IsBookBorrowedByUser(int bookId, int userId);
+        Task<bool> ExistsAsync(string isbn);
         Task<IEnumerable<Book>> GetBooksByCategory(int categoryId);
         Task<IEnumerable<Book>> SearchByTitle(string keyword);
+
     }
 }
 

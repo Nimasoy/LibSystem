@@ -1,8 +1,22 @@
-﻿using Library.Domain.Entities;
+﻿using Library.Domain.Common;
+using Library.Domain.Entities;
+using Library.Domain.Interfaces;
 
 namespace Library.Domain.DomainServices;
 
-public record BookReservedEvent(int UserId, int BookId, DateTime ReservedAt);
+public class BookReservedEvent : DomainEvent
+{
+    public int UserId { get; }
+    public int BookId { get; }
+    public DateTime ReservedAt { get; }
+
+    public BookReservedEvent(int userId, int bookId, DateTime reservedAt)
+    {
+        UserId = userId;
+        BookId = bookId;
+        ReservedAt = reservedAt;
+    }
+}
 
 public class ReservationService
 {
@@ -14,7 +28,7 @@ public class ReservationService
     }
     public void ReserveBook(User user, Book book)
     {
-        if (user.Borrows.Any(b => b.BookId == book.Id))
+        if (user.BorrowRecords.Any(b => b.BookId == book.Id))
             throw new InvalidOperationException("User has already borrowed this book.");
 
         if (user.Reservations.Any(r => r.BookId == book.Id))
@@ -29,6 +43,5 @@ public class ReservationService
         book.Reservations.Add(reservation);
 
         _eventDispatcher.Dispatch(new BookReservedEvent(user.Id, book.Id, DateTime.UtcNow));
-
     }
 }

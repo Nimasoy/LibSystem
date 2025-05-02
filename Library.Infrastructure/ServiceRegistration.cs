@@ -7,12 +7,12 @@ using Library.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Library.Application.Interfaces.Repositories;
+using Library.Domain.Interfaces;
 using Library.Infrastructure.Repositories;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using Library.Application.Mapping;
 using MediatR;
+using Library.Infrastructure.Services;
+using Library.Application.Interfaces; // Added missing using directive
 
 namespace Library.Infrastructure
 {
@@ -29,6 +29,9 @@ namespace Library.Infrastructure
             services.AddScoped<ITagRepository, TagRepository>();
             services.AddScoped<IBorrowRecordRepository, BorrowRecordRepository>();
             services.AddScoped<IReservationRepository, ReservationRepository>();
+            services.AddScoped<IDomainEventDispatcher, DomainEventDispatcher>();
+            services.AddScoped<ICacheService, CacheService>();
+            services.AddScoped<OverdueNotificationService>();
 
             return services;
         }

@@ -1,16 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Library.Domain.Entities;
-using Library.Application.Interfaces.Repositories;
-using MediatR;
-using AutoMapper;
+﻿using Library.Domain.Interfaces;
 using Library.Application.DTOs.Book;
+using FluentValidation;
+using MediatR;
 
 namespace Library.Application.Features.Books.Commands
 {
+    public class AddBookCommandValidator : AbstractValidator<AddBookCommand>
+    {
+        public AddBookCommandValidator()
+        {
+            RuleFor(x => x.CreateBookDto.Title).NotEmpty();
+            RuleFor(x => x.CreateBookDto.Author).NotEmpty();
+            RuleFor(x => x.CreateBookDto.ISBN).NotEmpty();
+            RuleFor(x => x.CreateBookDto.Publisher).NotEmpty();
+            RuleFor(x => x.CreateBookDto.Year).InclusiveBetween(1000, DateTime.UtcNow.Year);
+            RuleFor(x => x.CreateBookDto.TotalCopies).GreaterThan(0);
+            RuleFor(x => x.CreateBookDto.CategoryId).GreaterThan(0);
+        }
+    }
+
     public class AddBookCommand : IRequest<int>
     {
         public CreateBookDto CreateBookDto { get; set; }
@@ -18,26 +26,6 @@ namespace Library.Application.Features.Books.Commands
         public AddBookCommand(CreateBookDto createBookDto)
         {
             CreateBookDto = createBookDto;
-        }
-    }
-
-    public class AddBookCommandHandler : IRequestHandler<AddBookCommand, int>
-    {
-        private readonly IBookRepository _repository;
-        private readonly IMapper _mapper;
-
-        public AddBookCommandHandler(IBookRepository repository, IMapper mapper)
-        {
-            _repository = repository;
-            _mapper = mapper;
-        }
-
-        public async Task<int> Handle(AddBookCommand request, CancellationToken cancellationToken)
-        {
-            var book = _mapper.Map<Book>(request.CreateBookDto);
-
-            await _repository.AddAsync(book);
-            return book.Id;
         }
     }
 }

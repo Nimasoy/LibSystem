@@ -21,8 +21,52 @@ namespace Library.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(LibraryDbContext).Assembly);
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Book>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Title).IsRequired();
+                entity.Property(e => e.Author).IsRequired();
+                entity.Property(e => e.ISBN).IsRequired();
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Email).IsRequired();
+                entity.Property(e => e.PasswordHash).IsRequired();
+                entity.Property(e => e.FirstName).IsRequired();
+                entity.Property(e => e.LastName).IsRequired();
+            });
+
+            modelBuilder.Entity<BorrowRecord>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.HasOne(e => e.Book)
+                    .WithMany(b => b.BorrowRecords)
+                    .HasForeignKey(e => e.BookId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(e => e.User)
+                    .WithMany(u => u.BorrowRecords)
+                    .HasForeignKey(e => e.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<Reservation>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+                entity.HasOne(e => e.Book)
+                    .WithMany(b => b.Reservations)
+                    .HasForeignKey(e => e.BookId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasOne(e => e.User)
+                    .WithMany(u => u.Reservations)
+                    .HasForeignKey(e => e.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
         }
     }
 }

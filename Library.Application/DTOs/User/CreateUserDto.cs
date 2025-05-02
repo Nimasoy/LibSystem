@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Library.Application.DTOs.User
 {
-    class CreateUserDto
+    public class CreateUserDto
     {
+        public string FullName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+
     }
 }

@@ -8,5 +8,6 @@ namespace Library.Application.Mapping
 {
     class UserProfile
     {
+
     }
 }

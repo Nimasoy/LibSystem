@@ -18,7 +18,7 @@ namespace Library.Infrastructure.Repositories
         {
             return await _context.Books
                 .Include(b => b.Tags)
-                .Include(b => b.Category)
+                .Include(b => b.Categories)
                 .FirstOrDefaultAsync(b => b.Id == id);
         }
 
@@ -26,7 +26,7 @@ namespace Library.Infrastructure.Repositories
         {
             return await _context.Books
                 .Include(b => b.Tags)
-                .Include(b => b.Category)
+                .Include(b => b.Categories)
                 .ToListAsync();
         }
 
@@ -51,7 +51,7 @@ namespace Library.Infrastructure.Repositories
         // domain specific queries
         public async Task<IEnumerable<Book>> GetAvailableBooks()
         {
-            return await _context.Books.Where(b => b.AvailableCopies.Value > 0).ToListAsync();   
+            return await _context.Books.Where(b => b.AvailableCopies > 0).ToListAsync();   
         }
         public async Task<bool> IsReservedByUser(int bookId, int userId)
         {
@@ -61,15 +61,19 @@ namespace Library.Infrastructure.Repositories
         {
             return await _context.BorrowRecords.AnyAsync(b => b.BookId == bookId && b.UserId == userId);
         }
+        public async Task<bool> ExistsAsync(string isbn)
+        {
+            return await _context.Books.AnyAsync(b => b.ISBN == isbn);
+        }
         public async Task<IEnumerable<Book>> GetBooksByCategory(int categoryId)
         {
             return await _context.Books
-                .Where(b => b.CategoryId == categoryId).ToListAsync();
+                .Where(b => b.Categories.Any(c => c.Id == categoryId)).ToListAsync();
         }
         public async Task<IEnumerable<Book>> SearchByTitle(string keyword)
         {
             return await _context.Books
-                .Where(b => b.Title.Value.Contains(keyword)).ToListAsync();
+                .Where(b => b.Title.Contains(keyword)).ToListAsync();
         }
     }
 }

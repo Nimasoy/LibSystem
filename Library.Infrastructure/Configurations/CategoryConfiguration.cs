@@ -15,6 +15,16 @@ namespace Library.Infrastructure.Configurations
         {
             builder.HasKey(e => e.Id);
             builder.Property(e => e.Id).IsRequired();
+
+            builder.OwnsOne(c => c.Name, name =>
+            {
+                name.Property(cn => cn.Value)
+                    .HasColumnName("Name")
+                    .IsRequired()
+                    .HasConversion(
+                        v => v.Value, // Convert CategoryName to string for database
+                        v => new Library.Domain.ValueObjects.Category.CategoryName(v)); // Convert string from database to CategoryName
+            });
         }
     }
 }

@@ -14,9 +14,43 @@ namespace Library.Infrastructure.Configurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasKey(e => e.Id);
-            builder.Property(e => e.Id).IsRequired();
-            builder.Property(u => u.FullName).IsRequired().HasMaxLength(150);
-            builder.Property(u => u.Email).IsRequired().HasMaxLength(100);
+            
+            builder.Property(e => e.Id)
+                .IsRequired()
+                .UseIdentityColumn();
+
+            builder.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            builder.Property(e => e.PasswordHash)
+                .IsRequired();
+
+            builder.Property(e => e.FirstName)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(e => e.LastName)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder.Property(e => e.CreatedAt)
+                .IsRequired();
+
+            // Add unique index for email
+            builder.HasIndex(e => e.Email)
+                .IsUnique();
+
+            // Configure relationships
+            builder.HasMany(e => e.BorrowRecords)
+                .WithOne()
+                .HasForeignKey("UserId")
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasMany(e => e.Reservations)
+                .WithOne()
+                .HasForeignKey("UserId")
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

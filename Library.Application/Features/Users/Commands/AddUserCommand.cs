@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library.Application.Common;
+using Library.Application.DTOs.User;
+using MediatR;
 
 namespace Library.Application.Features.Users.Commands
 {
-    class AddUserCommand
-    {
-    }
+    // Changed to return the ID of the created user within BaseResponse
+    public record AddUserCommand(CreateUserDto CreateUserDto) : IRequest<BaseResponse<int>>;
 }
